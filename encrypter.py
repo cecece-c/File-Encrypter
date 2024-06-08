@@ -22,7 +22,7 @@ with open("masterkey.key", "rb") as filekey:
 use = Fernet(master_key)
 
 
-# Encrypt data using 'master_key_1' and store value in 'encrypted_data'. Write 'encrypted_data' to 'target'
+# Encrypt data using 'master_key' and store value in 'encrypted_data'. Write 'encrypted_data' to 'target'
 with open(target_file, "wb") as target:
     encrypted_data = use.encrypt(data)
     target.write(encrypted_data)
