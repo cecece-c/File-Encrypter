@@ -13,16 +13,16 @@ while True:
         print("\nInvalid input. File not found.")
 
 
-# Open 'masterkey1.key' as 'filekey' and store value in 'master_key_1'
-with open("masterkey1.key", "rb") as filekey:
-    master_key_1 = filekey.read()
+# Open 'masterkey.key' as 'filekey' and store value in 'master_key'
+with open("masterkey.key", "rb") as filekey:
+    master_key = filekey.read()
 
 
-# Use 'master_key_1'
-use = Fernet(master_key_1)
+# Use 'master_key'
+use = Fernet(master_key)
 
 
-# Decrypt data using 'master_key_1' and store value in 'decrypted_data'. Write 'decrypted_data' to 'target'
+# Decrypt data using 'master_key' and store value in 'decrypted_data'. Write 'decrypted_data' to 'target'
 with open(target_file, "wb") as target:
     decrypted_data = use.decrypt(data)
     target.write(decrypted_data)
