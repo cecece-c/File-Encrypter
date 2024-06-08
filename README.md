@@ -1,6 +1,6 @@
 # File-Encrypter
-keygen.py generates master key
+'keygen.py' generates master key
 
-encrypter.py encrypts files
+'encrypter.py' encrypts files
 
-decrypter.py decrypts files
+'decrypter.py' decrypts files
