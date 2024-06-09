@@ -1,5 +1,6 @@
-# Import 'cryptography' library
+# Import 'cryptography' and 'time' library
 from cryptography.fernet import Fernet
+import time
 
 
 # Open target file as 'target' and read data. Store value in 'data'
@@ -26,3 +27,9 @@ use = Fernet(master_key)
 with open(target_file, "wb") as target:
     decrypted_data = use.decrypt(data)
     target.write(decrypted_data)
+
+
+# Exit program
+print("\nProgram exiting...")
+for delay in range(5):
+    time.sleep(1)
