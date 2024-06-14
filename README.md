@@ -1,4 +1,4 @@
-# File-Encrypter
+# File Encrypter
 'Keygen' generates master key
 
 'Encrypter' encrypts files
