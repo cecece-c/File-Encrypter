@@ -15,7 +15,6 @@ current_working_directory = current_working_directory.replace("c:", "") + "/"
 # Write master key to file 'masterkey.key'
 with open(f"{current_working_directory}masterkey.key", "wb") as filekey:
     filekey.write(master_key)
-    # Display message
     print(f"\nMaster key has been generated and written to {current_working_directory}masterkey.key.")
 
 
