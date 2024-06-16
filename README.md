@@ -1,8 +1,8 @@
 # File Encrypter
-'Keygen' generates master key
+'Keygen.py' generates master key
 
-'Encrypter' encrypts files
+'Encrypter.py' encrypts files
 
-'Decrypter' decrypts files
+'Decrypter.py' decrypts files
 
-'Directory Encrypter' encrypts all files in a directory
+'Directory Encrypter.py' encrypts all files in a directory
