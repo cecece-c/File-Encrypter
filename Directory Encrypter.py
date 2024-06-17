@@ -1,7 +1,7 @@
 # MALICIOUS
 
 
-# Import 'Fernet', 'os', 'sys' and 'time' libraries
+# Import 'Fernet' class and 'os', 'sys', and 'time' libraries
 from cryptography.fernet import Fernet
 import os, sys, time
 
