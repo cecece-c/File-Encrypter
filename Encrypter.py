@@ -20,7 +20,7 @@ current_working_directory = current_working_directory.replace("c:", "") + "/"
 # Open target file as 'target' and read data. Store value in 'data'
 while True:
     try:
-        target_file = input("\nTarget file: ")
+        target_file = input("\nTarget file:\n")
         with open(f"{current_working_directory}{target_file}", "rb") as target:
             data = target.read()
             break
@@ -37,7 +37,7 @@ try:
 except FileNotFoundError:
     print("\nMaster key not found. Either generate master key or enter master key manually.")
     try:
-        master_key = input("\nEnter master key: ")
+        master_key = input("\nEnter master key:\n")
         use = Fernet(master_key)
         encryption()
     except TypeError:
