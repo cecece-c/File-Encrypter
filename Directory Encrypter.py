@@ -20,7 +20,7 @@ def encryption():
 
 
 # Get directory to encrypt and store value in 'directory' (String)
-directory = input("\nEnter directory: ")
+directory = input("\nEnter directory:\n")
 
 
 # Get current working directory of script and store value in 'current_working_directory' (String)
@@ -30,7 +30,7 @@ current_working_directory = current_working_directory.replace("c:", "") + "/"
 
 # Get and use master key. Store value in 'master_key'
 try:
-    master_key = input("\nEnter master key: ")
+    master_key = input("\nEnter master key:\n")
     use = Fernet(master_key)
     encryption()
 except TypeError:
